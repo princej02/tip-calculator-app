@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Tip calculator app</title>
+  
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="col-1">
+        <div class="content">
+          <div class="bill-labels">
+            <p>Bill</p>
+            <p class="warning-bill">Can't be zero </p>
+          </div>
+          <div class="input-wrap">
+            <img class="icon" src="images/icon-dollar.svg" alt="dollar-icon">
+            <input class="bill-input" type="text">
+          </div>
+          <div class="tip-btns">
+            <p>Select Tip %</p>
+            <div class="btn-grid">
+              <div class="btn-grid-1">
+                <button data-id="5" class="btn">5%</button>
+              </div>
+              <div class="btn-grid-2">
+                <button data-id="10" class="btn">10%</button>
+              </div>
+              <div class="btn-grid-3">
+                <button data-id="15" class="btn">15%</button>
+              </div>
+              <div class="btn-grid-4">
+                <button data-id="25" class="btn">25%</button>
+              </div>
+              <div class="btn-grid-5">
+                <button data-id="50" class="btn">50%</button>
+              </div>
+              <div class="btn-grid-5">
+                <input class="tip-input" type="text" placeholder="custom">
+              </div>
+            </div>
+          </div>
+          <div class="no-of-people">
+            <div class="no-of-people-text">
+              <p>Number Of People</p>
+              <span class="hide-warn show-warning span">Can't be zero</span>
+            </div>
+            <div class="input-wrap">
+              <img src="images/icon-person.svg" alt="person-icon" class="icon">
+              <input class="no-people" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="calculator">
+          <div class="label">
+            <div class="text">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="label-price">
+              <label for="" class="tip-amount">$0.00</label>
+            </div>
+          </div>
+          <div class="label">
+            <div class="text">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="label-price">
+              <label for="" class="total">$0.00</label>
+            </div>
+          </div>
+          <button class="btn-reset btn-disabled">Reset</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
